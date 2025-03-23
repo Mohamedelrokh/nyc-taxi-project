@@ -35,7 +35,7 @@ def insert_taxi_trip(cursor, message_key, tpep_pickup_datetime, tpep_dropoff_dat
     """Inserts taxi trip data into the PostgreSQL taxi_trips table and associates Kafka key with trip_id."""
     try:
         insert_query = """
-            INSERT INTO taxi_trips (message_key, tpep_pickup_datetime, tpep_dropoff_datetime, pulocation_id, dolocation_id, passenger_count, trip_distance,payment_type, fare_amount)
+            INSERT INTO green_taxi_trips (message_key, tpep_pickup_datetime, tpep_dropoff_datetime, pulocation_id, dolocation_id, passenger_count, trip_distance,payment_type, fare_amount)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         """
         cursor.execute(insert_query, (message_key, tpep_pickup_datetime, tpep_dropoff_datetime, pulocation_id, dolocation_id, passenger_count, trip_distance,payment_type, fare_amount))
