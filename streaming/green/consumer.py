@@ -109,7 +109,7 @@ def consume_and_insert(topic, config):
 
 def main():
     config = read_config()
-    topic = "5-try-yellow-trips"  # Kafka topic name (same as the producer's topic)
+    topic = "green-trips"  # Kafka topic name (same as the producer's topic)
     consume_and_insert(topic, config)
 
 if __name__ == "__main__":
