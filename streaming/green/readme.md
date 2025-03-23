@@ -16,7 +16,7 @@ The architecture of this data pipeline is composed of the following:
 
 - **Confluent Kafka**: Used as the message broker for streaming data.
 - **PostgreSQL**: A relational database used to store the consumed data for further processing and analytics.
-- **Power BI**: A dashboard solution that connects to PostgreSQL and visualizes the taxi trip data in real-time.
+- **Power BI**: A dashboard solution that connects to PostgreSQL and visualizes the taxi trip data in real-time with setting DirectQuery to enable real-time updates
 
 ---
 
