@@ -9,7 +9,7 @@ SAMPLES_DIR = r"C:\Work\Learning\Zoomcamp\project\batch_pipeline\nyc_taxi_data\g
 STATE_FILE = "last_produced_state.json"  # File to track last processed file & row
 
 # Kafka Topic
-TOPIC_NAME = "6-try-green-trips"
+TOPIC_NAME = "green-trips"
 
 def read_config():
     """Reads the Kafka client configuration from client.properties and returns it as a dictionary."""
