@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:14
+    restart: on-failure
+    container_name: "postgres"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    extra_hosts:
+     - "host.docker.internal:127.0.0.1" #// Linux
+     - "host.docker.internal:host-gateway" #// Access services on the host machine from within the Docker container
