@@ -57,7 +57,7 @@ SELECT
     EXTRACT(MONTH FROM lpep_dropoff_datetime) AS dropoff_month,
     EXTRACT(DAY FROM lpep_dropoff_datetime) AS dropoff_day,
     EXTRACT(HOUR FROM lpep_dropoff_datetime) AS dropoff_hour
-FROM `di-malrokh-sandbox-malrokh.taxi_data.raw_trips`;  -- Replace with your raw table name
+FROM `di-malrokh-sandbox-malrokh.taxi_data.green_trips_raw`;  -- Replace with your raw table name
 
 
 
