@@ -1,5 +1,5 @@
 WITH aggregated_data AS (
-    SELECT * FROM {{ ref('grouped_trips') }}  -- Reference the aggregation model
+    SELECT * FROM {{ ref('green_grouped_trips') }}  -- Reference the aggregation model
 )
 
 SELECT
