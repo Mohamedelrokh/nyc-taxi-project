@@ -1,3 +1,5 @@
+# for both yellow and green 
+
 Steps to Schedule a Job in dbt Cloud:
 1- Go to dbt Cloud 
 2- Open your dbt Cloud account.
