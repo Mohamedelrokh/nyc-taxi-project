@@ -1,3 +1,3 @@
-# nyc-taxi-project  stream  batch pipeline
+# NYC Taxi Project Stream & Batch Pipeline
 
-https://drive.google.com/file/d/1wzEo1XlhFCsibhB8hVBVl9_vOUD8e9l2/view?usp=sharing
+For more details, view the [project file](https://drive.google.com/file/d/1wzEo1XlhFCsibhB8hVBVl9_vOUD8e9l2/view?usp=sharing).
