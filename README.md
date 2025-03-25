@@ -17,7 +17,7 @@ The streaming pipeline ensures real-time processing of NYC taxi trip data.
 #### **Workflow:**
 1. **Raw Data Source:**
    - NYC OpenData provides real-time taxi trip data.
-   - Python scripts (`producer.py`) push data into Kafka topics (Green Taxi & Yellow Taxi).
+   - Python scripts (`producer.py`) push data -in milliseconds to simulate streaming- into Kafka topics (Green Taxi & Yellow Taxi).
 2. **Ingestion:**
    - **Confluent Kafka** acts as the messaging system to receive and distribute data.
    - Data is pushed into separate topics (`Green Topic` and `Yellow Topic`).
@@ -33,7 +33,7 @@ The batch pipeline processes historical data at scheduled intervals.
 
 #### **Workflow:**
 1. **Raw Data Source:**
-   - Bulk data from NYC OpenData is collected and stored in **Google Cloud Storage (Raw Zone).**
+   - Other consumers collects 100 messages from kafka topics and store them  in **Google Cloud Storage (Raw Zone).** as **parquet** files.
 2. **Processing & Transformation:**
    - **Google Dataflow** processes raw data and loads it into **BigQuery**.
    - Data moves through the **Trusted Zone** and is refined in **Refined Zone**.
